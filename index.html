@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./src/images/favicon.ico" />
+    <title>Fouro Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <svg class="logo" width="104" height="56" viewBox="0 0 104 56" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.125 12H0V43.4576H4.33333V30.1695H16.7917L20.0417 26.9153V25.2881H4.33333V16.6102H21.125V12Z"
+                    fill="#B21414"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M42.25 33.4236C42.25 39.2647 37.3391 43.9999 31.2812 43.9999C25.2234 43.9999 20.3125 39.2647 20.3125 33.4236C20.3125 27.5825 25.2234 22.8474 31.2812 22.8474C37.3391 22.8474 42.25 27.5825 42.25 33.4236ZM37.9875 33.4236C37.9875 37.054 34.9885 40.0033 31.2812 40.0033C27.574 40.0033 24.575 37.054 24.575 33.4236C24.575 29.7933 27.574 26.844 31.2812 26.844C34.9885 26.844 37.9875 29.7933 37.9875 33.4236Z"
+                    fill="#B21414"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M103.938 33.4236C103.938 39.2647 99.0266 43.9999 92.9688 43.9999C86.9109 43.9999 82 39.2647 82 33.4236C82 27.5825 86.9109 22.8474 92.9688 22.8474C99.0266 22.8474 103.938 27.5825 103.938 33.4236ZM99.675 33.4236C99.675 37.054 96.676 40.0033 92.9688 40.0033C89.2615 40.0033 86.2625 37.054 86.2625 33.4236C86.2625 29.7933 89.2615 26.844 92.9688 26.844C96.676 26.844 99.675 29.7933 99.675 33.4236Z"
+                    fill="#B21414"></path>
+                <path d="M50 23.3899H45.5V40.4747L48.4792 43.4577H63.375V23.3899H59V39.1187H50V23.3899Z" fill="#B21414">
+                </path>
+                <path
+                    d="M72.5847 23.3899H67.9805V43.4577H72.5847V30.712L78.8138 27.1865H82.0638V23.3899H77.1888L72.5847 26.1018V23.3899Z"
+                    fill="#B21414"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="gallery container block-style">
+            <div class="gallery__header">
+                <div class="gallery__title title">Gallery</div>
+                <div class="gallery__nav">
+                    <a href="#" class="gallery__nav-link gallery__nav-link--active" data-id="1">All images</a>
+                    <a href="#" class="gallery__nav-link" data-id="2">Nature</a>
+                    <a href="#" class="gallery__nav-link" data-id="3">Cars</a>
+                    <a href="#" class="gallery__nav-link" data-id="4">Animals</a>
+                    <a href="#" class="gallery__nav-link" data-id="5">Sports</a>
+                </div>
+            </div>
+            <div class="gallery__items">
+                <img src="./src/images/6-min.jpg" alt="" class="gallery__item" data-id="2">
+                <img src="./src/images/5-min.jpg" alt="" class="gallery__item" data-id="2">
+                <img src="./src/images/8-min.jpg" alt="" class="gallery__item" data-id="2">
+                <img src="./src/images/7-min.jpg" alt="" class="gallery__item" data-id="2">
+
+
+                <img src="./src/images/1-min.jpg" alt="" class="gallery__item" data-id="3">
+                <img src="./src/images/3-min.jpg" alt="" class="gallery__item" data-id="3">
+                <img src="./src/images/4-min.jpg" alt="" class="gallery__item" data-id="3">
+                <img src="./src/images/2-min.jpg" alt="" class="gallery__item" data-id="3">
+
+                <img src="./src/images/12-min.jpg" alt="" class="gallery__item" data-id="4">
+                <img src="./src/images/10-min.jpg" alt="" class="gallery__item" data-id="4">
+                <img src="./src/images/9-min.jpg" alt="" class="gallery__item" data-id="4">
+                <img src="./src/images/11-min.jpg" alt="" class="gallery__item" data-id="4">
+
+                <img src="./src/images/15-min.jpg" alt="" class="gallery__item" data-id="5">
+                <img src="./src/images/16-min.jpg" alt="" class="gallery__item" data-id="5">
+                <img src="./src/images/13-min.jpg" alt="" class="gallery__item" data-id="5">
+                <img src="./src/images/14-min.jpg" alt="" class="gallery__item" data-id="5">
+            </div>
+        </section>
+        <section class="gallery-view container block-style">
+            <div class="gallery-view__header">
+                <div class="gallery-view__title title">Gallery view</div>
+                <div class="gallery-view__nav">
+                    <a href="#" class="gallery__view-nav-link gallery__view-nav-link--active" data-id="1">
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                    </a>
+                    <a href="#" class="gallery__view-nav-link" data-id="2">
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                        <span class="gallery__view-nav-link-point"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery-view__items">
+                <div class="gallery-view__item">
+                    <img src="./src/images/1-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/2-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/3-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/4-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/5-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/6-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/7-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/8-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/9-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/10-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/11-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/12-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/13-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/14-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/15-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/16-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/1-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/2-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/3-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/4-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/5-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/6-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/7-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+                <div class="gallery-view__item">
+                    <img src="./src/images/8-min.jpg" alt="" class="gallery-view__item-image">
+                    <div class="gallery-view__item-overlay">
+                        <p class="gallery-view__item-overlay-text">Some description </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="data container block-style">
+            <div class="data__title title">Таблица данных</div>
+            <form class="data-form">
+                <div class="data-form__group">
+                    <div class="data-form__group-title">Имя *</div>
+                    <div class="custom-input">
+                        <input type="text" name="name" class="custom-input__field" placeholder="Введите Ваше имя"
+                            required>
+                    </div>
+                </div>
+                <div class="data-form__group">
+                    <div class="data-form__group-title">Фамилия *</div>
+                    <div class="custom-input">
+                        <input type="text" name="surname" class="custom-input__field" placeholder="Введите Вашу фамилию"
+                            required>
+                    </div>
+                </div>
+                <div class="data-form__group">
+                    <div class="data-form__group-title">Email *</div>
+                    <div class="custom-input">
+                        <input type="email" name="email" class="custom-input__field" placeholder="Введите Ваш email"
+                            required>
+                    </div>
+                </div>
+                <div class="data-form__selects">
+                    <div class="hiden-select__group" data-id="1">
+                        <option value="1">Автокредитование</option>
+                        <option value="2">Ипотека</option>
+                        <option value="3">Лизинг</option>
+                    </div>
+                    <div class="hiden-select__group" data-id="2">
+                        <option value="1">Мясник</option>
+                        <option value="2">Кладовщик</option>
+                        <option value="3">Уборщик</option>
+                    </div>
+                    <div class="hiden-select__group" data-id="3">
+                        <option value="1">Программист</option>
+                        <option value="2">Дизайнер</option>
+                        <option value="3">Проект менеджер</option>
+                    </div>
+                    <div class="data-form__group">
+                        <div class="data-form__group-title">Компания</div>
+                        <div class="custom-select">
+                            <select name="select" class="custom-select__field custom-select__field--company">
+                                <option value="1" selected>Сбер</option>
+                                <option value="2">Рога и копыта</option>
+                                <option value="3">Yandex</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="data-form__group">
+                        <div class="data-form__group-title">Должность</div>
+                        <div class="custom-select">
+                            <select name="select" class="custom-select__field custom-select__field--job">
+                                <option value="1">Автокредитование</option>
+                                <option value="2">Ипотека</option>
+                                <option value="3">Лизинг</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-form__submit-holder">
+                    <input type="submit" class="button data-form__submit" value="Отправить">
+                </div>
+
+            </form>
+            <div class="table table--hidden">
+                <div class="table__row table__row--header">
+                    <div class="table__column">ID</div>
+                    <div class="table__column">Имя</div>
+                    <div class="table__column">Фамилия</div>
+                    <div class="table__column">Email</div>
+                    <div class="table__column">Компания</div>
+                    <div class="table__column">Должность</div>
+                </div>
+            </div>
+            <div class="table__row-template">
+                <div class="table__row">
+                    <div class="table__column table__column--id"></div>
+                    <div class="table__column table__column--name"></div>
+                    <div class="table__column table__column--surname"></div>
+                    <div class="table__column table__column--email"></div>
+                    <div class="table__column table__column--company"></div>
+                    <div class="table__column table__column--job"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <svg class="logo" width="104" height="56" viewBox="0 0 104 56" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.125 12H0V43.4576H4.33333V30.1695H16.7917L20.0417 26.9153V25.2881H4.33333V16.6102H21.125V12Z"
+                    fill="#B21414"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M42.25 33.4236C42.25 39.2647 37.3391 43.9999 31.2812 43.9999C25.2234 43.9999 20.3125 39.2647 20.3125 33.4236C20.3125 27.5825 25.2234 22.8474 31.2812 22.8474C37.3391 22.8474 42.25 27.5825 42.25 33.4236ZM37.9875 33.4236C37.9875 37.054 34.9885 40.0033 31.2812 40.0033C27.574 40.0033 24.575 37.054 24.575 33.4236C24.575 29.7933 27.574 26.844 31.2812 26.844C34.9885 26.844 37.9875 29.7933 37.9875 33.4236Z"
+                    fill="#B21414"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M103.938 33.4236C103.938 39.2647 99.0266 43.9999 92.9688 43.9999C86.9109 43.9999 82 39.2647 82 33.4236C82 27.5825 86.9109 22.8474 92.9688 22.8474C99.0266 22.8474 103.938 27.5825 103.938 33.4236ZM99.675 33.4236C99.675 37.054 96.676 40.0033 92.9688 40.0033C89.2615 40.0033 86.2625 37.054 86.2625 33.4236C86.2625 29.7933 89.2615 26.844 92.9688 26.844C96.676 26.844 99.675 29.7933 99.675 33.4236Z"
+                    fill="#B21414"></path>
+                <path d="M50 23.3899H45.5V40.4747L48.4792 43.4577H63.375V23.3899H59V39.1187H50V23.3899Z" fill="#B21414">
+                </path>
+                <path
+                    d="M72.5847 23.3899H67.9805V43.4577H72.5847V30.712L78.8138 27.1865H82.0638V23.3899H77.1888L72.5847 26.1018V23.3899Z"
+                    fill="#B21414"></path>
+            </svg>
+            <div class="footer__copyright">developed by: <span>Egor Poltorak</span></div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./src/scripts.js"></script>
+</body>
+
+</html>
