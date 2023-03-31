@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let data = form.serializeArray()
         count++;
         $.ajax({
-            type: "POST",
+            type: "GET",
             data: data,
             success: function () {
                 $('.table__row-template').find('.table__column--id').text(count)
