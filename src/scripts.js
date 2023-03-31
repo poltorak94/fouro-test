@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
         count++;
         $.ajax({
             type: "POST",
-            url: 'data.html',
             data: data,
             success: function () {
                 $('.table__row-template').find('.table__column--id').text(count)
